@@ -1,0 +1,5 @@
+.tr {
+  -webkit-transition: all 0.25s easse;
+  -o-transition: all 0.25s easse;
+  transition: all 0.25s easse;
+}
