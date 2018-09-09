@@ -1,0 +1,5 @@
+.transition {
+  -webkit-transition: linear 1s ease-in;
+  -o-transition: linear 1s ease-in;
+  transition: linear 1s ease-in;
+}
