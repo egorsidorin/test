@@ -8,34 +8,36 @@
 }
 
 body{
-	font-family: "Open Sans Regular", sans-serif;
+	font-family: "Open Sans", sans-serif;
 	font-weight: normal;
 	font-size: 16px;
 	min-width: 320px;
 	position: relative;
 	line-height: 1.6;
+	overflow-x: hidden;
 	opacity: 1;
 }
 
-.title{
-	font-size: 28px;
-	text-align: center;
-	font-weight: normal;
-	padding-bottom: 40px;
-}
-
-.header{
+.heading{
 	background-color: @main;
 	color: #fff;
 	font-family: "Open Sans Bold", sans-serif;
-	padding-bottom: 70px;
+	padding: 50px 0 70px 0;
 	&__title{
 		padding: 70px 0;
 		line-height: 1.29;
-		font-size: 32px;
-		width: 70%;
+		font-size: 42px;
+		max-width: 895px;
 		margin: 0 auto;
 		text-align: center;
+		font-family: "Open Sans", sans-serif;
+		font-weight: bold;
+	}
+	&__h2{
+		font-family: "Open Sans", sans-serif;		font-size: 28px;
+		text-align: center;
+		font-weight: normal;
+		padding-bottom: 40px;
 	}
 }
 
@@ -45,7 +47,7 @@ body{
 }
 
 .advantages{
-	width: 70%;
+	max-width: 895px;
 	display: flex;
 	justify-content: space-between;
 	text-align: left;
@@ -54,11 +56,7 @@ body{
 	&__info{
 		display: flex;
 		flex-wrap: wrap;
-	}
-	&__item{
-		width: 30%;
-		margin-bottom: 40px;
-		h2{
+		&__h2{
 			opacity: 0.5;
 			font-size: 20px;
 			color: #fff;
@@ -67,13 +65,19 @@ body{
 			letter-spacing: normal;
 			width: 100%;
 			margin-bottom: 10px;
+			font-family: "Open Sans", sans-serif;
 		}
-		p{
+		&__text{
 			font-size: 18px;
 			line-height: 1.56;
 			color: #fff;
+			font-family: "Open Sans", sans-serif;
 		}
-		img{
+	}
+	&__item{
+		width: 30%;
+		margin-bottom: 40px;
+		&__img{
 			width: 42px;
 			float: left;
 			margin-right: 16px;
@@ -85,6 +89,7 @@ body{
 	text-align: center;
 }
 .button{
+	font-family: "Open Sans", sans-serif;
 	display: inline-block;
 	background-color: #fff;
 	padding: 9px 69px;
@@ -92,7 +97,7 @@ body{
 	color: @red;
 	text-decoration: none;
 	font-size: 20px;
-	img{
+	&__img{
 		margin-left: 8px;
 	}
 	&:hover,
@@ -119,22 +124,23 @@ body{
 	flwx-wrap: wrap;
 	&__item{
 		width: 35%;
-	}
-	img{
-		width: 56px;
-		height: 50px;
-		display: block;
-		margin: 0 auto;
-		margin-bottom: 16px;
-	}
-	a{
+		&__link{
 		color: #fff;
 		text-decoration: none;
 		border-bottom: solid 1px rgba(151, 151, 151, 0.5);
 		font-size: 20px;
+		font-family: "Open Sans", sans-serif;
 		&:hover{
 			color: @red;
 			.transition();
+		}
+	}
+		&__img{
+			width: 56px;
+			height: 50px;
+			display: block;
+			margin: 0 auto;
+			margin-bottom: 16px;
 		}
 	}
 }

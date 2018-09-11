@@ -1,40 +1,44 @@
 .transition {
-  -webkit-transition: linear 1s ease-in;
-  -o-transition: linear 1s ease-in;
-  transition: linear 1s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 * {
   padding: 0;
   margin: 0;
 }
 body {
-  font-family: "Open Sans Regular", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.6;
+  overflow-x: hidden;
   opacity: 1;
 }
-.title {
+.heading {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: "Open Sans Bold", sans-serif;
+  padding: 50px 0 70px 0;
+}
+.heading__title {
+  padding: 70px 0;
+  line-height: 1.29;
+  font-size: 42px;
+  max-width: 895px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+.heading__h2 {
+  font-family: "Open Sans", sans-serif;
   font-size: 28px;
   text-align: center;
   font-weight: normal;
   padding-bottom: 40px;
-}
-.header {
-  background-color: #1a1a1a;
-  color: #fff;
-  font-family: "Open Sans Bold", sans-serif;
-  padding-bottom: 70px;
-}
-.header__title {
-  padding: 70px 0;
-  line-height: 1.29;
-  font-size: 32px;
-  width: 70%;
-  margin: 0 auto;
-  text-align: center;
 }
 .container {
   display: -webkit-box;
@@ -47,7 +51,7 @@ body {
           justify-content: center;
 }
 .advantages {
-  width: 70%;
+  max-width: 895px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -71,11 +75,7 @@ body {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
 }
-.advantages__item {
-  width: 30%;
-  margin-bottom: 40px;
-}
-.advantages__item h2 {
+.advantages__info__h2 {
   opacity: 0.5;
   font-size: 20px;
   color: #fff;
@@ -84,13 +84,19 @@ body {
   letter-spacing: normal;
   width: 100%;
   margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
 }
-.advantages__item p {
+.advantages__info__text {
   font-size: 18px;
   line-height: 1.56;
   color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
-.advantages__item img {
+.advantages__item {
+  width: 30%;
+  margin-bottom: 40px;
+}
+.advantages__item__img {
   width: 42px;
   float: left;
   margin-right: 16px;
@@ -99,6 +105,7 @@ body {
   text-align: center;
 }
 .button {
+  font-family: "Open Sans", sans-serif;
   display: inline-block;
   background-color: #fff;
   padding: 9px 69px;
@@ -108,16 +115,16 @@ body {
   text-decoration: none;
   font-size: 20px;
 }
-.button img {
+.button__img {
   margin-left: 8px;
 }
 .button:hover,
 .button:active,
 .button:focus {
   background-color: #d2d2d2;
-  -webkit-transition: linear 1s ease-in;
-  -o-transition: linear 1s ease-in;
-  transition: linear 1s ease-in;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
 }
 .dark {
   background-color: #262626;
@@ -148,24 +155,25 @@ body {
 .problem__item {
   width: 35%;
 }
-.problem img {
+.problem__item__link {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: solid 1px rgba(151, 151, 151, 0.5);
+  font-size: 20px;
+  font-family: "Open Sans", sans-serif;
+}
+.problem__item__link:hover {
+  color: #ff2e2f;
+  -webkit-transition: 0.5s ease-in;
+  -o-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
+}
+.problem__item__img {
   width: 56px;
   height: 50px;
   display: block;
   margin: 0 auto;
   margin-bottom: 16px;
-}
-.problem a {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: solid 1px rgba(151, 151, 151, 0.5);
-  font-size: 20px;
-}
-.problem a:hover {
-  color: #ff2e2f;
-  -webkit-transition: linear 1s ease-in;
-  -o-transition: linear 1s ease-in;
-  transition: linear 1s ease-in;
 }
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
